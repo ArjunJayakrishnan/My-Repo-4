@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/> -->
+		<link href="../css/styles.css" rel="stylesheet" />
+		<title>Frontend Mentor | Age calculator app</title>
+	</head>
+	<body>
+		<div class="container">
+			<form class="enter-container">
+				<div class="input-container">
+					<p class="input-p day--input-p">DAY</p>
+
+					<input
+						type="number"
+						placeholder="DD"
+						class="user-days user-input"
+						required
+					/>
+					<p class="error error-day">Must be a valid day</p>
+				</div>
+				<div class="input-container">
+					<p class="input-p month--input-p">MONTH</p>
+
+					<!-- Had to use min max atrributes bcuz validation of month in script.js not working -->
+					<input
+						type="number"
+						placeholder="MM"
+						class="user-months user-input"
+						min="1"
+						max="12"
+						required
+					/>
+					<p class="error error-month">Must be a valid month</p>
+				</div>
+				<div class="input-container">
+					<p class="input-p year--input-p">YEAR</p>
+
+					<input
+						type="number"
+						placeholder="YYYY"
+						class="user-years user-input"
+						required
+					/>
+					<p class="error error-year">Must be in the past</p>
+				</div>
+				<button class="icon-container" type="submit">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="52"
+						height="50"
+						viewBox="0 0 46 44"
+					>
+						<g fill="none" stroke="#fff" stroke-width="2">
+							<path
+								d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+							/>
+						</g>
+					</svg>
+				</button>
+			</form>
+			<div class="show-container">
+				<p class="years-dash dash">- -</p>
+				<p>years</p>
+				<p class="months-dash dash">- -</p>
+				<p>months</p>
+				<p class="days-dash dash">- -</p>
+				<p>days</p>
+			</div>
+		</div>
+		<script src="../js/script.js" type="module"></script>
+	</body>
+</html>
