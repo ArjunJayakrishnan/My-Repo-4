@@ -1,6 +1,8 @@
-# Frontend Mentor - Age calculator app solution
 
-This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+### Links
+
+- Live Site URL: [https://stellular-nasturtium-27ac85.netlify.app/]
+- Solution URL: [https://github.com/ArjunJayakrishnan/My-Repo-4]
 
 ## Table of contents
 
@@ -10,7 +12,6 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ### The challenge
 
@@ -39,10 +40,7 @@ Users should be able to:
 
 -Individual error handling: [https://drive.google.com/file/d/1mrIWxRrJTgKtQEx4gPtAnZ7a5DUSI3D0/view?usp=share_link]
 
-### Links
 
-- Solution URL: [https://github.com/ArjunJayakrishnan/My-Repo-4]
-- Live Site URL: [https://stellular-nasturtium-27ac85.netlify.app/]
 
 ### Built with
 
@@ -60,6 +58,3 @@ I learned a lot about JS.
 
 - Frontend Mentor - [@ArjunJayakrishnan]
 
-## Acknowledgments
-
-I thank Frontend mentor for giving me this challenge.
