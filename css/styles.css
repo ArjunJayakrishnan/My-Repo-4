@@ -1,0 +1,257 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+/* FONT FACES */
+@font-face {
+	font-family: poppins;
+	src: url("../Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: poppins;
+	font-weight: 700;
+	src: url("../Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: poppins;
+	font-style: italic;
+	src: url("../Poppins-Italic.ttf") format("truetype");
+}
+@font-face {
+	font-family: poppins;
+	font-weight: 700;
+	font-style: italic;
+	src: url("../Poppins-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: poppins;
+	font-weight: 900;
+	src: url("../Poppins-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: poppins;
+	font-weight: 900;
+	font-style: italic;
+	src: url("../Poppins-ExtraBoldItalic.ttf") format("truetype");
+}
+
+/* ////////////////////////// */
+/* Regular css */
+/* ///////////////////////// */
+
+body {
+	background-color: hsl(0, 0%, 94%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.container {
+	position: relative;
+	width: 70%;
+	background-color: white;
+	padding: 5.4rem;
+	border-radius: 3.2rem 3.2rem 26.4rem 3.2rem;
+}
+.enter-container {
+	display: flex;
+	gap: 6.4rem;
+	padding-bottom: 4.8rem;
+	border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+/* Input values part */
+
+.input-p {
+	color: hsl(0, 1%, 44%);
+	font-family: poppins, sans-serif;
+	font-weight: 700;
+	font-size: 1.2rem;
+	letter-spacing: 0.24rem;
+	margin-bottom: 0.8rem;
+}
+
+.user-input {
+	border-radius: 0.5rem;
+	padding: 2rem;
+	width: 100%;
+	border: 1px solid hsl(0, 0%, 86%);
+	font-family: poppins, sans-serif;
+	font-size: 3.2rem;
+	font-weight: 900;
+	outline: none;
+}
+.user-input:hover {
+	border-color: hsl(259, 100%, 65%);
+}
+
+.enter-container input::placeholder {
+	font-size: 3.2rem;
+	font-family: poppins, sans-serif;
+	font-weight: 900;
+	color: hsl(0, 2%, 60%);
+}
+
+.input-container {
+	width: 20%;
+}
+
+.error {
+	display: none;
+	color: hsl(0, 100%, 67%);
+	font-family: poppins, sans-serif;
+	font-style: italic;
+	font-size: 1.2rem;
+	margin-top: 0.8rem;
+}
+
+/* icons/button part */
+.icon-container {
+	background-color: hsl(259, 100%, 65%);
+	padding: 3.2rem;
+	border: none;
+	border-radius: 6.4rem;
+
+	position: absolute;
+	top: 24%;
+	right: 5%;
+}
+.icon-container:hover {
+	background-color: black;
+}
+
+/* Output values container */
+
+.show-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	column-gap: 1.2rem;
+	row-gap: 0.8rem;
+	/* border-bottom: 1px solid hsl(0, 0%, 86%); */
+	padding-top: 6.4rem;
+	width: min-content;
+}
+
+.show-container p {
+	font-family: poppins, sans-serif;
+	font-size: 11.4rem;
+	font-weight: 900;
+	font-style: italic;
+	height: 11.4rem;
+	display: flex;
+	align-items: center;
+}
+
+.dash {
+	width: max-content;
+	color: hsl(259, 100%, 65%);
+}
+
+/* Media querries */
+
+@media (max-width: 1085px) {
+	html {
+		font-size: 9px;
+	}
+	.container {
+		width: 75%;
+	}
+	.enter-container input::placeholder {
+		font-size: 2.4rem;
+	}
+	.show-container p {
+		font-size: 9.2rem;
+		height: 9.2rem;
+	}
+}
+@media (max-width: 875px) {
+	.container {
+		width: 80%;
+	}
+	.enter-container input::placeholder {
+		font-size: 1.8rem;
+	}
+	.icon-container {
+		padding: 1.8rem;
+		top: 29%;
+		right: 6%;
+	}
+	.icon-container svg {
+		width: 4.4rem;
+		height: 4.2rem;
+	}
+	.show-container p {
+		font-size: 8.4rem;
+		height: 8.4rem;
+	}
+	.error {
+		font-size: 0.9rem;
+	}
+}
+@media (max-width: 660px) {
+	html {
+		font-size: 8px;
+	}
+	.container {
+		width: 85%;
+	}
+	.enter-container {
+		gap: 2.4rem;
+	}
+	.input-container {
+		width: 25%;
+	}
+	.show-container p {
+		font-size: 7.2rem;
+		height: 7.2rem;
+	}
+}
+@media (max-width: 490px) {
+	.container {
+		width: 90%;
+		padding: 4rem;
+		border-radius: 3.2rem 3.2rem 11.2rem 3.2rem;
+	}
+	.enter-container {
+		padding-bottom: 6.4rem;
+		justify-content: space-between;
+	}
+	.enter-container input {
+		padding: 1.2rem;
+		width: 100%;
+		font-size: 2.4rem;
+	}
+	.input-container {
+		width: 30%;
+	}
+	.icon-container {
+		top: 33%;
+		right: 42%;
+	}
+	.show-container p {
+		font-size: 5.4rem;
+		height: 5.4rem;
+	}
+}
+
+@media (max-width: 340px) {
+	html {
+		font-size: 7px;
+	}
+}
+
+/* Helper classes */
+.typing {
+	border-color: hsl(259, 100%, 65%);
+}
